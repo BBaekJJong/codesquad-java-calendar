@@ -6,8 +6,8 @@ public class Calendar {
 
 	public void printSamplCalendar() {
 		// TODO Auto-generated method stub
-		System.out.println(" 월\t화\t수\t목\t금\t토\t일");
-		System.out.println("----------------------------------");
+		System.out.println(" 일\t월\t화\t수\t목\t금\t토");
+		System.out.println("--------------------------------------------------");
 		System.out.println("1\t2\t3\t4\t5\t6\t7");
 		System.out.println("8\t9\t10\t11\t12\t13\t14");
 		System.out.println("15\t16\t17\t18\t19\t20\t21");
@@ -18,9 +18,26 @@ public class Calendar {
 	
 	public int getMaxDaysOfMonth(int month) {
 		// TODO Auto-generated method stub
-		return MAX_DAYS[month -1];
+		
+		return MAX_DAYS[month - 1];
+	
 	}
 		
+	public void printCalendar(int month) {
+		// TODO Auto-generated method stub
+		System.out.println(" 일\t월\t화\t수\t목\t금\t토");
+		System.out.println("--------------------------------------------------");
+		
+		for (int i = 1; i < month + 1; i++) {
+			if (i % 8 == 0) {
+				System.out.println("");
+			}else {
+				System.out.print(i + "\t");
+			}
+		}
+		
+	}	
+	
 	public static void main(String[] args) {
 		// 숫자를 입력 받아 해당하는 달의 최대 일수를 출력하는 프로그램
 	
@@ -34,12 +51,10 @@ public class Calendar {
 		Calendar cal = new Calendar();
 		
 		System.out.printf("입력하신 %d월은 %d일 입니다.\n",a,cal.getMaxDaysOfMonth(a));
-		
+		cal.printCalendar(cal.getMaxDaysOfMonth(a));
 		scanner.close();
 
 		
-		System.out.println("Home Start");
-		System.out.println("Home Start");
 
 	}
 
