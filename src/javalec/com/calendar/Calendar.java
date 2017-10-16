@@ -38,6 +38,7 @@ public class Calendar {
 		scanner.close();
 		
 		System.out.println("Home Start");
+		System.out.println("Home Start");
 	}
 
 }
