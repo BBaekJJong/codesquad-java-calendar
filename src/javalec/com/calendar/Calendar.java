@@ -71,7 +71,7 @@ public class Calendar {
 		cal.printCalendar(cal.getMaxDaysOfMonth(a, b));
 		scanner.close();
 
-		
+		System.out.println("Github 가지고 오기");
 
 	}
 
