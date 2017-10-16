@@ -36,6 +36,8 @@ public class Calendar {
 		System.out.printf("입력하신 %d월은 %d일 입니다.\n",a,cal.getMaxDaysOfMonth(a));
 		
 		scanner.close();
+		
+		System.out.println("Home Start");
 	}
 
 }
