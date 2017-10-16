@@ -56,11 +56,13 @@ public class Calendar {
 	public static void main(String[] args) {
 		// 숫자를 입력 받아 해당하는 달의 최대 일수를 출력하는 프로그램
 	
-		System.out.println("원하는 월을 입력하세요");
-		
 		Scanner scanner = new Scanner(System.in);
 //		String s1 = scanner.next();
+		System.out.println("원하는 년도를 입력하세요");
+		System.out.print("YEAR >> ");
 		int a = scanner.nextInt();
+		System.out.println("원하는 월을 입력하세요");
+		System.out.print("MONTH >> ");
 		int b = scanner.nextInt();
 		
 //		int a = Integer.parseInt(s1);
@@ -71,7 +73,7 @@ public class Calendar {
 		cal.printCalendar(cal.getMaxDaysOfMonth(a, b));
 		scanner.close();
 
-		System.out.println("Github 가지고 오기");
+
 
 	}
 
